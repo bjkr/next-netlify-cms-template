@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.1.6",
@@ -17,11 +18,19 @@
     "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
     "git-cz": "^4.8.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "prettier": "2.6.2"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/git-cz"
     }
+  },
+  "lint-staged": {
+    "*.{js, jsx, json, md}": [
+      "npm run eslint",
+      "prettier --write"
+    ]
   }
 }

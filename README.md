@@ -5,6 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, install commitizen:
 
 ```bash
+npm prepare
 npm install -g commitizen
 ```
 
