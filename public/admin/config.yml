@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway # use "test-repo" to test locally
+  name: test-repo # use "test-repo" to test locally | use "git-gateway" for production
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
